@@ -1,13 +1,12 @@
 import './App.css';
-import Footer from './components/Footer';
-import SignupCard from './pages/SignupCard';
+import AllRoutes from './components/AllRoutes';
+
 
 
 function App() {
   return (
     <div className="App">
-     <Footer/>
-     <SignupCard/>
+    <AllRoutes/>
      
     </div>
   );
