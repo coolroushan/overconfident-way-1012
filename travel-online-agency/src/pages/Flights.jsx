@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import {Box, Flex, Image, Text, Grid,Button, Checkbox, Input,Select} from "@chakra-ui/react"
+import {Box, Flex, Image, Text, Grid,Button, Input, Checkbox, Select} from "@chakra-ui/react"
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar";
 import { FetchingContext } from "../context/FetchingContextProvider";
@@ -13,7 +13,7 @@ const getData=(page,filter)=>{
     return axios.get(`https://wicked-teal-seal.cyclic.app/${filter}?_limit=4&_page=${page}`)
   }
 
-const HomePage=()=>{
+const Flights=()=>{
     const [data, setData]=useState([])
    
    let [searchParam, setSearchParam] = useSearchParams();
@@ -152,4 +152,5 @@ const HomePage=()=>{
         </Box>
     )
 }
-export default HomePage;
+
+export default Flights
